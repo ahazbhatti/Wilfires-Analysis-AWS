@@ -1,0 +1,2 @@
+# Wilfires-Analysis-AWS
+Formed a pipeline on AWS to show fires in the U.S. and performed ETL process flow. Loaded data into s3 bucket and used Glue crawler to crawl data from S3 and store it into Glue database, initiated a job in Glue to remove duplicates. Created Lambda script for S3 to trigger and detect data and crawl it every time data is loaded. Added SNS to send success and failure messages of data upload  to email. Made a RedShift cluster to store data from Glue. Connected Tableau to Redshift to perform visualizations on dataset for fires in the U.S.
